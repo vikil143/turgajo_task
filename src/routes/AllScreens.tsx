@@ -1,7 +1,7 @@
 import { Platform, SectionList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createStackNavigator, StackScreenProps } from '@react-navigation/stack';
-import { AllScreenParams } from './types';
+import { AllScreenParams, KeysOfAllScreenParams } from './types';
 import { ParamListBase } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 import { EXAMPLES } from './data';
@@ -9,23 +9,8 @@ import { EXAMPLES } from './data';
 const Stack = createStackNavigator<AllScreenParams>();
 
 
-const isHeaderShow = (screenName: string) => {
+const isHeaderShow = (screenName: KeysOfAllScreenParams) => {
     switch (screenName) {
-        case "Calender App": {
-            return false
-        }
-        case "Calculator App": {
-            return false
-        }
-        case "Scroll Anim": {
-            return false
-        }
-        case "Reanimated 2": {
-            return false
-        }
-        case "D3 Emamples": {
-            return false
-        }
         default: {
             return true
         }

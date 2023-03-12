@@ -19,3 +19,9 @@ export const EXAMPLES: ExamplesSection[] = [
     },
 ]
 
+
+export const AllScreensKeyList: AllScreenParams = {
+    Home: undefined,
+    Dummy: undefined,
+}
+
